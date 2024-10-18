@@ -19,16 +19,16 @@ async function sendMessage (){
   <div>
     <h3>メッセージ</h3>
     <form @submit.prevent="sendMessage">
-      <input v-model="newMessage" placeholder="Type a message">
+      <input v-model="newMessage" placeholder="メッセージを入力">
       <button type="submit">
-        Send
+        送信
       </button>
     </form>
     <p v-for="message of messages" :key="message.id">
       {{ message.text }} - {{ new Date(message.created_at).toLocaleString('fr-FR') }}
     </p>
     <p v-if="!messages?.length">
-      No messages yet
+      メッセージはありません
     </p>
   </div>
 </template>

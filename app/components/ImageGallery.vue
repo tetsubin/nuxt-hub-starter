@@ -23,11 +23,11 @@ async function deleteImage (pathname: string) {
 
 <template>
   <div>
-    <h3>Images</h3>
+    <h3>イメージ</h3>
     <form @submit.prevent="uploadImage">
-      <label>Upload an image: <input type="file" name="image" accept="image/jpg,image/png"></label>
+      <label>アップロードするイメージ: <input type="file" name="image" accept="image/jpg,image/png"></label>
       <button type="submit">
-        Upload
+        アップロード
       </button>
     </form>
     <p>
